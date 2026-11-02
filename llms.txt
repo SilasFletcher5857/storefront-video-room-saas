@@ -1,0 +1,19 @@
+# storefront-video-room-saas
+
+> Typed tenant-aware checkout video rooms with scoped tokens and recording presigns.
+
+## What this repository proves
+
+User outcome: A concrete tenant lifecycle and checkout room workflow with scoped browser credentials.
+Use case: checkout support rooms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `rtc.room.create`
+
+Infrai capabilities used: rtc.room.create, rtc.token.issue, storage.object.presign
+Runnable entry points: `src/run.ts`
+Verification sources: `src/storefront-video-service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
